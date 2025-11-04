@@ -46,7 +46,7 @@ header a:hover {
     width: 700px;
     align-items: center;
 }
-.main img {
+#bild1 {
     width: 100%;
     height:100%;
     margin: 20px auto;
@@ -75,4 +75,34 @@ footer {
 footer img {
     max-width: 150px;
     height: auto;
+}
+
+.imagegallery {
+    display: grid;
+    width : 80%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: min-max(100px,1fr);
+}
+
+.bilder {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .imagegallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
