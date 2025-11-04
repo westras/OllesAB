@@ -7,7 +7,7 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #ffffff;
+    color: #000000;
     line-height: 1.6;
     padding: 20px;
     min-height: 100vh;
@@ -34,9 +34,9 @@ header a:hover {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1800px;
     margin: auto;
-    background: #444;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
 }
@@ -59,7 +59,7 @@ header a:hover {
 }
 
 .kontaktinfo {
-    background-color: #555;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     margin-top: 30px;
