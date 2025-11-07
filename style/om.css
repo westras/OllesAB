@@ -1,34 +1,39 @@
 *{
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    font-family:system-ui,Segoe UI,Arial;
-    margin:16px;
-    color:#222;
-    background: #d4d4d4;
-    background-size: stretch;
+    font-family: Arial, sans-serif;
+    background: #f5f6f7;
+    color: #111111;
+    padding: 20px;
+    min-height: 100vh;
 }
-    
+
 .container{
-    max-width:1100px;
-    margin:0 auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
-    
+
 header {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
-    padding: 10px 0;
+    padding: 12px 0;
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 6px;
 }
 
 header a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 12px;
     font-weight: bold;
 }
 
@@ -36,32 +41,60 @@ header a:hover {
     text-decoration: underline;
 }
 
-    
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    align-items: start;
 }
-    
+
 .card{
-    border:1px solid #000000;
-    box-shadow:0 4px 8px rgba(0,0,0,0.1);
-    border-radius:6px;
-    padding:12px;
-    background:linear-gradient(90deg,#7a7a7a,#626262);
+    background: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 160ms ease, box-shadow 160ms ease;
 }
-    
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
 .card img{
-    width:100%;
-    height:auto;
-    border-radius: 1rem;
-    box-shadow: #000000 0px 0px 2px;
-    display:block;
-    margin-bottom:8px;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 4px;
 }
-    
+
+.card h3{
+    font-size: 1rem;
+    margin: 4px 0;
+    color: #111111;
+}
+
 .meta{
-    font-size:0.95rem;
-    color:#000000;
+    font-size: 0.95rem;
+    color: #666666;
+    margin-top: auto;
+}
+
+/* responsive tweaks */
+@media screen and (max-width: 900px){
+    .container { padding: 14px; }
+    .card img { height: 140px; }
+}
+
+@media screen and (max-width: 480px){
+    header { padding: 10px 6px; }
+    .card img { height: 120px; }
+    .grid { gap: 12px; }
 }
 
