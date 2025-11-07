@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+    <header>
+         <a href="om.php">Om</a> | <a href="Contact.html">Kontakta oss</a>
+         <h1>OllesAB</h1>
+    </header>
+
+  <form action="mailto:info@ollesab.se" method="get" enctype="text/plain">
+    <label>Namn</label>
+    <input type="text" name="Namn" required>
+
+    <label>E-post</label>
+    <input type="email" name="Epost" required>
+
+    <label>Telefon</label>
+    <input type="text" name="Telefon">
+
+    <label>Meddelande</label>
+    <textarea name="Meddelande" required></textarea>
+
+    <button type="submit">Skicka</button>
+  </form>
+
+  <div class="info">
+    <p><strong>Olles AB</strong><br>
+    Gruvövägen, 66433 Grums<br>
+    E-post: <a href="mailto:info@ollesab.se">info@ollesab.se</a><br>
+    Telefon: <a href="tel:077111238800">0771-11 23 88 00</a></p>
+  </div>
+</body>
+</html>

@@ -32,7 +32,7 @@ $people = [
 <body>
   <div class="container">
     <header>
-        <a href="index.html">Hem</a> | <a href="pic.html">Bilder</a>
+        <a href="index.html">Hem</a> | <a href="Contact.html">Kontakta oss</a>
         <h1>Olles AB</h1>
         <p>Företaget är verksamt sedan 1948. Organisation: STYR (3), PROD (10), UTV (3), IT (1), SALG (2).</p>
     </header>
