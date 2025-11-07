@@ -88,14 +88,26 @@ header a:hover {
 
 /* responsive tweaks */
 @media screen and (max-width: 900px){
-    .container { padding: 14px; }
-    .card img { height: 140px; }
+    .container { 
+        padding: 14px; 
+    }
+    .card img { 
+        height: 140px; 
+    }
 }
 
 @media screen and (max-width: 480px){
-    header { padding: 10px 6px; }
-    .card img { height: 120px; }
-    .grid { gap: 12px; }
+    header { 
+        padding: 10px 6px; 
+    }
+
+    .card img { 
+        height: 120px; 
+    }
+
+    .grid { 
+        gap: 12px;
+    }
 }
 
 footer {
