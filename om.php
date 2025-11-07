@@ -47,5 +47,8 @@ $people = [
       <?php endforeach; ?>
     </section>
   </div>
+<footer>
+            <img src="https://ollesab.mockelngymnasiet.com/res/OllLogo.gif" alt="Olles AB Logo Footer">
+</footer>
 </body>
 </html>
